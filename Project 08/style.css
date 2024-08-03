@@ -1,0 +1,55 @@
+#game{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+}
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    left: 400px;
+    bottom: 20px;
+    animation: block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:400px}
+    100%{left:-50px}
+}
+#character_clickable-div{
+    width: 20px;
+    height: 20px;
+    background-color: #2196F3;
+    position: relative;
+    top: 200px;
+    left: 300px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: character 2s infinite linear;
+}
+@keyframes character{
+    0%{left:400px}
+    5%{top:300px}
+    10%{top:200px}
+    20%{top:300px}
+    30%{top:150px;}
+    50%{top:100px}
+    60%{top:120px}
+    100%{left:-600px}
+}
+
+
+
+#message {
+    display: none;
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 20px;
+    position: relative;
+    top: 200px;
+}
+
